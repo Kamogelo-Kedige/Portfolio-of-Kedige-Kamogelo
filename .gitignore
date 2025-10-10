@@ -8,9 +8,9 @@ Thumbs.db
 # Logs
 *.log
 
-# Optional: Ignore build or output folders if you use bundlers later
+# Ignore build or output folders if you use bundlers later
 dist/
 build/
 
-# Optional: Ignore environment files if you add any
+#  Ignore environment files if you add any
 .env

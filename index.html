@@ -1,0 +1,979 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kedige Kamogelo - Software Developer Portfolio</title>
+    <meta name="description"
+        content="Aspiring software developer specializing in full-stack web development. View my projects, skills, and experience in React, Node.js, and modern web technologies.">
+    <meta name="author" content="Kedige Kamogelo">
+
+    <meta property="og:title" content="Kedige Kamogelo - Software Developer Portfolio">
+    <meta property="og:description"
+        content="Aspiring software developer building modern web applications. Check out my latest projects and technical skills.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Kedige Kamogelo - Software Developer">
+    <meta name="twitter:description" content="Portfolio showcasing full-stack development projects and skills">
+    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style/styles.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <a href="#home" class="logo gradient-text">KK</a>
+
+                <div class="desktop-nav">
+                    <a href="#home" class="nav-link">Home</a>
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#skills" class="nav-link">Skills</a>
+                    <a href="#projects" class="nav-link">Projects</a>
+                    <a href="#education" class="nav-link">Education</a>
+                    <a href="#experience" class="nav-link">Experience</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                    <button id="theme-toggle-desktop" class="glass theme-toggle" aria-label="Toggle theme">
+                        <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="5"></circle>
+                            <line x1="12" y1="1" x2="12" y2="3"></line>
+                            <line x1="12" y1="21" x2="12" y2="23"></line>
+                            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                            <line x1="1" y1="12" x2="3" y2="12"></line>
+                            <line x1="21" y1="12" x2="23" y2="12"></line>
+                            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                        </svg>
+                        <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2">
+                            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="mobile-nav-buttons">
+                    <button id="theme-toggle-mobile" class="glass theme-toggle" aria-label="Toggle theme">
+                        <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="5"></circle>
+                            <line x1="12" y1="1" x2="12" y2="3"></line>
+                            <line x1="12" y1="21" x2="12" y2="23"></line>
+                            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                            <line x1="1" y1="12" x2="3" y2="12"></line>
+                            <line x1="21" y1="12" x2="23" y2="12"></line>
+                            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                        </svg>
+                        <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2">
+                            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                        </svg>
+                    </button>
+                    <button id="mobile-menu-toggle" class="glass" aria-label="Toggle menu">
+                        <svg class="menu-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2">
+                            <line x1="3" y1="12" x2="21" y2="12"></line>
+                            <line x1="3" y1="6" x2="21" y2="6"></line>
+                            <line x1="3" y1="18" x2="21" y2="18"></line>
+                        </svg>
+                        <svg class="close-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2">
+                            <line x1="18" y1="6" x2="6" y2="18"></line>
+                            <line x1="6" y1="6" x2="18" y2="18"></line>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <div id="mobile-menu" class="mobile-menu">
+                <div class="mobile-menu-content">
+                    <a href="#home" class="mobile-nav-link">Home</a>
+                    <a href="#about" class="mobile-nav-link">About</a>
+                    <a href="#skills" class="mobile-nav-link">Skills</a>
+                    <a href="#projects" class="mobile-nav-link">Projects</a>
+                    <a href="#education" class="mobile-nav-link">Education</a>
+                    <a href="#experience" class="mobile-nav-link">Experience</a>
+                    <a href="#contact" class="mobile-nav-link">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <div class="hero-inner animate-fade-in">
+                <div class="profile-image-wrapper">
+                    <div class="profile-glow animate-float"></div>
+                    <img src="img/Kedige Kamogelo.jpeg" alt="Kamogelo Kedige" class="profile-image">
+                </div>
+
+                <h1 class="hero-title gradient-text animate-gradient">Kedige Kamogelo</h1>
+                <p class="hero-subtitle"> Software Developer</p>
+
+
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">
+                        View My Work
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <line x1="12" y1="5" x2="12" y2="19"></line>
+                            <polyline points="19 12 12 19 5 12"></polyline>
+                        </svg>
+                    </a>
+                    <a href="#contact" class="btn btn-outline">Get In Touch</a>
+                    <a href="img/bg.png" class="btn btn-outline" download="CV">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                            <polyline points="7 10 12 15 17 10"></polyline>
+                            <line x1="12" y1="15" x2="12" y2="3"></line>
+                        </svg>
+                        Download CV
+                    </a>
+                </div>
+
+                <div class="social-links">
+                    <a href="https://github.com/Kamogelo-Kedige" target="_blank" rel="noopener noreferrer"
+                        class="glass-card social-link">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path
+                                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                            </path>
+                        </svg>
+                    </a>
+                    <a href="https://www.linkedin.com/in/kamogelo-kedige-bb2841389/" target="_blank"
+                        rel="noopener noreferrer" class="glass-card social-link">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
+                            </path>
+                            <rect x="2" y="9" width="4" height="12"></rect>
+                            <circle cx="4" cy="4" r="2"></circle>
+                        </svg>
+                    </a>
+                    <a href="mailto:alex@example.com" class="glass-card social-link">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                            </path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="scroll-indicator">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="12" y1="5" x2="12" y2="19"></line>
+                <polyline points="19 12 12 19 5 12"></polyline>
+            </svg>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="section-content">
+                <h2 class="section-title animate-fade-in">
+                    About <span class="gradient-text">Me</span>
+                </h2>
+                <div class="glass-card about-card animate-scale-in">
+                    <p class="about-text">
+                        I'm a passionate computer science student with a deep love for creating elegant, efficient
+                        solutions to complex problems.
+                        My journey in software development began with curiosity and has evolved into a commitment to
+                        building impactful applications
+                        that make a difference. I thrive in collaborative environments and am constantly learning new
+                        technologies to stay at the
+                        forefront of the ever-evolving tech landscape.
+                    </p>
+                    <p class="about-text">
+                        Currently pursuing my Bachelor's degree while actively contributing to open-source projects and
+                        freelancing. I'm particularly
+                        interested in full-stack development, cloud technologies, and creating seamless user
+                        experiences. My goal is to join a
+                        forward-thinking team where I can contribute meaningfully while continuing to grow as a
+                        developer.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <div class="container">
+            <h2 class="section-title animate-fade-in">
+                Technical <span class="gradient-text">Skills</span>
+            </h2>
+
+            <div class="skills-grid">
+                <div class="glass-card skill-category animate-scale-in" style="animation-delay: 0s;">
+                    <div class="skill-header">
+                        <div class="skill-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <polyline points="16 18 22 12 16 6"></polyline>
+                                <polyline points="8 6 2 12 8 18"></polyline>
+                            </svg>
+                        </div>
+                        <h3 class="skill-title">Languages</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">C#</span>
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">C++</span>
+                        <span class="skill-tag">SQL</span>
+                    </div>
+                </div>
+
+                <div class="glass-card skill-category animate-scale-in" style="animation-delay: 0.1s;">
+                    <div class="skill-header">
+                        <div class="skill-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <line x1="2" y1="12" x2="22" y2="12"></line>
+                                <path
+                                    d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z">
+                                </path>
+                            </svg>
+                        </div>
+                        <h3 class="skill-title">Frontend</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">ASP .NET</span>
+
+                        <span class="skill-tag">HTML5</span>
+                        <span class="skill-tag">CSS3</span>
+
+                    </div>
+                </div>
+
+                <div class="glass-card skill-category animate-scale-in" style="animation-delay: 0.2s;">
+                    <div class="skill-header">
+                        <div class="skill-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                                <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                                <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+                            </svg>
+                        </div>
+                        <h3 class="skill-title">Backend</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">ASP .NET</span>
+
+                        <span class="skill-tag">SQL Express</span>
+                        <span class="skill-tag">Django</span>
+                        <span class="skill-tag">REST APIs</span>
+
+                    </div>
+                </div>
+
+                <div class="glass-card skill-category animate-scale-in" style="animation-delay: 0.3s;">
+                    <div class="skill-header">
+                        <div class="skill-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path
+                                    d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z">
+                                </path>
+                            </svg>
+                        </div>
+                        <h3 class="skill-title">Tools & Tech</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">canva</span>
+                        <span class="skill-tag">VS Code</span>
+                        <span class="skill-tag">Visual Studio</span>
+
+                    </div>
+                </div>
+
+                <div class="glass-card skill-category animate-scale-in" style="animation-delay: 0.4s;">
+                    <div class="skill-header">
+                        <div class="skill-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                                <line x1="8" y1="21" x2="16" y2="21"></line>
+                                <line x1="12" y1="17" x2="12" y2="21"></line>
+                            </svg>
+                        </div>
+                        <h3 class="skill-title">Concepts</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">OOP</span>
+                        <span class="skill-tag">Data Structures</span>
+                        <span class="skill-tag">Algorithms</span>
+                        <span class="skill-tag">Databases</span>
+
+                    </div>
+                </div>
+
+                <div class="glass-card skill-category animate-scale-in" style="animation-delay: 0.5s;">
+                    <div class="skill-header">
+                        <div class="skill-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <line x1="12" y1="2" x2="12" y2="6"></line>
+                                <line x1="12" y1="18" x2="12" y2="22"></line>
+                                <line x1="4.93" y1="4.93" x2="7.76" y2="7.76"></line>
+                                <line x1="16.24" y1="16.24" x2="19.07" y2="19.07"></line>
+                                <line x1="2" y1="12" x2="6" y2="12"></line>
+                                <line x1="18" y1="12" x2="22" y2="12"></line>
+                                <line x1="4.93" y1="19.07" x2="7.76" y2="16.24"></line>
+                                <line x1="16.24" y1="7.76" x2="19.07" y2="4.93"></line>
+                            </svg>
+                        </div>
+                        <h3 class="skill-title">Version Control</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">GitHub</span>
+
+                        <span class="skill-tag">Branching</span>
+                        <span class="skill-tag">Pull Requests</span>
+                        <span class="skill-tag">Code Review</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="section-title animate-fade-in">
+                Featured <span class="gradient-text">Projects</span>
+            </h2>
+            <p class="section-description">
+                A showcase of my best work - from full-stack applications to AI-powered tools.
+                Each project demonstrates problem-solving, clean code, and modern development practices.
+            </p>
+
+            <div class="projects-grid">
+                <div class="glass-card project-card animate-scale-in" style="animation-delay: 0s;">
+                    <div class="project-header gradient-blue">
+                        <div class="project-header-overlay"></div>
+                        <h3 class="project-title">Daily Deli: E-Commerce Store</h3>
+                    </div>
+
+                    <div class="image-grid"
+                        style="display:grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap:8px; justify-items:center; align-items:center; padding-bottom:1rem;">
+                        <img src="img/DailyDeli (1).png" alt="Daily Deli Screenshot 1" class="project-image"
+                            style="width:100%; max-width:180px; height:auto; border-radius:8px;">
+                        <img src="img/DailyDeli (2).png" alt="Daily Deli Screenshot 2" class="project-image"
+                            style="width:100%; max-width:180px; height:auto; border-radius:8px;">
+                        <img src="img/DailyDeli (3).png" alt="Daily Deli Screenshot 3" class="project-image"
+                            style="width:100%; max-width:180px; height:auto; border-radius:8px;">
+                    </div>
+
+                    <div class="project-description"
+                        style="display:flex;flex-wrap:wrap;gap:1rem;align-items:flex-start;">
+                        Daily Deli is a responsive online storefront designed for busy families and health-conscious
+                        shoppers. It combines groceries, ready-to-eat meals, and weekly meal kits with clearly listed
+                        nutritional values and allergen information. Customers set dietary preferences (e.g., vegan,
+                        vegetarian, halal) at signup to receive filtered product catalogs, tailored weekly meal plans,
+                        and quick recipe suggestions that can add ingredients to the cart with one click. The platform
+                        supports community-driven diet-specific content and a transparent points-based loyalty program
+                        to boost retention.
+                    </div>
+
+
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML5</span>
+                        <span class="tech-tag">CSS3 & Bootstrap</span>
+                        <span class="tech-tag">SQL Server</span>
+                        <span class="tech-tag">ASP.NET C#</span>
+                        <span class="tech-tag">JavaScript</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com" target="_blank" rel="noopener noreferrer"
+                            class="btn-project btn-outline">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path
+                                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                </path>
+                            </svg>
+                            Code
+                        </a>
+                        <a href="https://example.com" target="_blank" rel="noopener noreferrer"
+                            class="btn-project btn-primary-alt">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                <polyline points="15 3 21 3 21 9"></polyline>
+                                <line x1="10" y1="14" x2="21" y2="3"></line>
+                            </svg>
+                            Live Demo
+                        </a>
+                    </div>
+                </div>
+
+                <div class="glass-card project-card animate-scale-in" style="animation-delay: 0.1s;">
+                    <div class="project-header gradient-purple">
+                        <div class="project-header-overlay"></div>
+                        <h3 class="project-title">API-powered Contact Book</h3>
+                    </div>
+
+                    <div class="image-grid"
+                        style="display:grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap:8px; justify-items:center; align-items:center; padding-bottom:1rem;">
+                        <img src="img/ContactBook1.png" alt="Daily Deli Screenshot 1" class="project-image"
+                            style="width:100%; max-width:180px; height:auto; border-radius:8px;">
+                        <img src="img/ContactBook2.png" alt="Daily Deli Screenshot 2" class="project-image"
+                            style="width:100%; max-width:180px; height:auto; border-radius:8px;">
+                        <img src="img/ConatctBook3.png" alt="Daily Deli Screenshot 3" class="project-image"
+                            style="width:100%; max-width:180px; height:auto; border-radius:8px;">
+                    </div>
+                    <p class="project-description" style="display:flex;flex-wrap:wrap;gap:1rem;align-items:flex-start;">
+                        Contact Book is a small, user-friendly contact manager that lets users add, edit and delete
+                        contacts via a backend API.
+                        It demonstrates CRUD (create/read/update/delete) flows for managing contacts with an
+                        API-backed frontend.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML5</span>
+                        <span class="tech-tag">CSS3</span>
+                        <span class="tech-tag">JavaScript</span>
+
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/Kamogelo-Kedige/Contact-Book-App" target="_blank"
+                            rel="noopener noreferrer" class="btn-project btn-outline">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path
+                                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                </path>
+                            </svg>
+                            Code
+                        </a>
+                        <a href="https://kamogelo-kedige.github.io/Contact-Book-App/" target="_blank"
+                            rel="noopener noreferrer" class="btn-project btn-primary-alt">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                <polyline points="15 3 21 3 21 9"></polyline>
+                                <line x1="10" y1="14" x2="21" y2="3"></line>
+                            </svg>
+                            Live Demo
+                        </a>
+                    </div>
+                </div>
+
+                <div class="glass-card project-card animate-scale-in" style="animation-delay: 0.2s;">
+                    <div class="project-header gradient-green">
+                        <div class="project-header-overlay"></div>
+                        <h3 class="project-title">Pine City Zoo App</h3>
+                    </div>
+
+                    <div class="image-grid"
+                        style="display:grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap:8px; justify-items:center; align-items:center; padding-bottom:1rem;">
+                        <img src="img/PineCity (1).png" alt="Daily Deli Screenshot 1" class="project-image"
+                            style="width:100%; max-width:180px; height:auto; border-radius:8px;">
+                        <img src="img/PineCity (2).png" alt="Daily Deli Screenshot 2" class="project-image"
+                            style="width:100%; max-width:180px; height:auto; border-radius:8px;">
+                        <img src="img/PineCity (4).png" alt="Daily Deli Screenshot 3" class="project-image"
+                            style="width:100%; max-width:180px; height:auto; border-radius:8px;">
+                    </div>
+                    <p class="project-description" style="display:flex;flex-wrap:wrap;gap:1rem;align-items:flex-start;">
+                        Pine City Zoo App is a front‑end information site for Pine City Zoo, built primarily with HTML,
+                        CSS, and JavaScript. It’s a responsive, visitor‑facing site that centralizes exhibit and animal
+                        information, event schedules, and practical details for planning visits, with an emphasis on
+                        clear, accessible markup, maintainable styles, and lightweight client‑side interactions.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML5</span>
+                        <span class="tech-tag">CSS3</span>
+
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/Kamogelo-Kedige/Pine-City-Zoo-App" target="_blank"
+                            rel="noopener noreferrer" class="btn-project btn-outline">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path
+                                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                </path>
+                            </svg>
+                            Code
+                        </a>
+                        <a href="https://kamogelo-kedige.github.io/Pine-City-Zoo-App/" target="_blank"
+                            rel="noopener noreferrer" class="btn-project btn-primary-alt">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                <polyline points="15 3 21 3 21 9"></polyline>
+                                <line x1="10" y1="14" x2="21" y2="3"></line>
+                            </svg>
+                            Live Demo
+                        </a>
+                    </div>
+                </div>
+
+                <div class="glass-card project-card animate-scale-in" style="animation-delay: 0.3s;">
+                    <div class="project-header gradient-orange">
+                        <div class="project-header-overlay"></div>
+                        <h3 class="project-title">My Calculator App</h3>
+                    </div>
+
+                    <div class="image-grid"
+                        style="display:grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap:8px; justify-items:center; align-items:center; padding-bottom:1rem;">
+                        <img src="img/calc1 (1).png" alt="Daily Deli Screenshot 1" class="project-image"
+                            style="width:100%; max-width:180px; height:auto; border-radius:8px;">
+                        <img src="img/calc1 (2).png" alt="Daily Deli Screenshot 2" class="project-image"
+                            style="width:100%; max-width:180px; height:auto; border-radius:8px;">
+                        <img src="img/calc1 (3).png" alt="Daily Deli Screenshot 3" class="project-image"
+                            style="width:100%; max-width:180px; height:auto; border-radius:8px;">
+                    </div>
+                    <p class="project-description" style="display:flex;flex-wrap:wrap;gap:1rem;align-items:flex-start;">
+                        My Calculator App is a lightweight, browser-based calculator that extends basic arithmetic with
+                        handy features like squaring, nth roots, decimal precision, and percentage calculations. Built
+                        as a single-page HTML app, it’s designed for quick, reliable calculations with a clean UI and no
+                        server required
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML5</span>
+                        <span class="tech-tag">CSS3</span>
+                        <span class="tech-tag">JavaScript</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/Kamogelo-Kedige/My-Calculator-App" target="_blank"
+                            rel="noopener noreferrer" class="btn-project btn-outline">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path
+                                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                </path>
+                            </svg>
+                            Code
+                        </a>
+                        <a href="https://kamogelo-kedige.github.io/My-Calculator-App/" target="_blank"
+                            rel="noopener noreferrer" class="btn-project btn-primary-alt">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                <polyline points="15 3 21 3 21 9"></polyline>
+                                <line x1="10" y1="14" x2="21" y2="3"></line>
+                            </svg>
+                            Live Demo
+                        </a>
+                    </div>
+                </div>
+
+                <div class="glass-card project-card animate-scale-in" style="animation-delay: 0.4s;">
+                    <div class="project-header gradient-indigo">
+                        <div class="project-header-overlay"></div>
+                        <h3 class="project-title">Portfolio Generator</h3>
+                    </div>
+                    <p class="project-description">
+                        No-code platform for developers to create stunning portfolios. Features drag-and-drop builder,
+                        themes, and automatic GitHub project sync.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">Firebase</span>
+                        <span class="tech-tag">GitHub API</span>
+                        <span class="tech-tag">Tailwind CSS</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com" target="_blank" rel="noopener noreferrer"
+                            class="btn-project btn-outline">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path
+                                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                </path>
+                            </svg>
+                            Code
+                        </a>
+                        <a href="https://example.com" target="_blank" rel="noopener noreferrer"
+                            class="btn-project btn-primary-alt">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                <polyline points="15 3 21 3 21 9"></polyline>
+                                <line x1="10" y1="14" x2="21" y2="3"></line>
+                            </svg>
+                            Live Demo
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section">
+        <div class="container">
+            <div class="section-content">
+                <h2 class="section-title animate-fade-in">
+                    Education & <span class="gradient-text">Achievements</span>
+                </h2>
+
+                <div class="education-list">
+                    <div class="glass-card education-card animate-scale-in" style="animation-delay: 0s;">
+                        <div class="education-content">
+                            <div class="education-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                                    <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                                </svg>
+                            </div>
+                            <div class="education-info">
+                                <div class="education-header">
+                                    <div>
+                                        <h3 class="education-degree">Bachelor of Science in Computer Science</h3>
+                                        <p class="education-institution">University of Technology</p>
+                                    </div>
+                                    <span class="education-period">2021 - Present</span>
+                                </div>
+                                <p class="education-gpa">GPA: 3.8/4.0</p>
+                                <ul class="education-achievements">
+                                    <li><span>•</span> Dean's List (Fall 2022, Spring 2023)</li>
+                                    <li><span>•</span> Member of Computer Science Society</li>
+                                    <li><span>•</span> Relevant Coursework: Data Structures, Algorithms, Web
+                                        Development, Database Systems</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="glass-card education-card animate-scale-in" style="animation-delay: 0.15s;">
+                        <div class="education-content">
+                            <div class="education-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <circle cx="12" cy="8" r="7"></circle>
+                                    <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+                                </svg>
+                            </div>
+                            <div class="education-info">
+                                <div class="education-header">
+                                    <div>
+                                        <h3 class="education-degree">Certifications & Achievements</h3>
+                                        <p class="education-institution">Online Learning & Competitions</p>
+                                    </div>
+                                    <span class="education-period">2022 - 2024</span>
+                                </div>
+                                <ul class="education-achievements">
+                                    <li><span>•</span> AWS Certified Cloud Practitioner</li>
+                                    <li><span>•</span> freeCodeCamp Responsive Web Design Certificate</li>
+                                    <li><span>•</span> 2nd Place - University Hackathon 2023</li>
+                                    <li><span>•</span> Google Code-in Participant</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="glass-card education-card animate-scale-in" style="animation-delay: 0.3s;">
+                        <div class="education-content">
+                            <div class="education-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                                    <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                                </svg>
+                            </div>
+                            <div class="education-info">
+                                <div class="education-header">
+                                    <div>
+                                        <h3 class="education-degree">Additional Learning</h3>
+                                        <p class="education-institution">Self-Taught & Online Courses</p>
+                                    </div>
+                                    <span class="education-period">Ongoing</span>
+                                </div>
+                                <ul class="education-achievements">
+                                    <li><span>•</span> Completed CS50: Introduction to Computer Science (Harvard)</li>
+                                    <li><span>•</span> Full Stack Open 2024 (University of Helsinki)</li>
+                                    <li><span>•</span> The Odin Project - Full Stack JavaScript Path</li>
+                                    <li><span>•</span> Active contributor to open-source projects on GitHub</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section section-alt">
+        <div class="container">
+            <div class="section-content">
+                <h2 class="section-title animate-fade-in">
+                    Professional <span class="gradient-text">Experience</span>
+                </h2>
+
+                <div class="experience-list">
+                    <div class="glass-card experience-card animate-scale-in" style="animation-delay: 0s;">
+                        <div class="experience-content">
+                            <div class="experience-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                                    <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                                </svg>
+                            </div>
+                            <div class="experience-info">
+                                <div class="experience-header">
+                                    <div>
+                                        <h3 class="experience-title">Frontend Developer Intern</h3>
+                                        <p class="experience-company">TechStart Inc.</p>
+                                    </div>
+                                    <div class="experience-badges">
+                                        <span class="experience-period">Summer 2023</span>
+                                        <span class="experience-type">Internship</span>
+                                    </div>
+                                </div>
+                                <ul class="experience-responsibilities">
+                                    <li><span>▸</span> Developed responsive UI components using React and Tailwind CSS
+                                        for client-facing dashboard</li>
+                                    <li><span>▸</span> Collaborated with design team to implement pixel-perfect
+                                        interfaces, improving user satisfaction by 25%</li>
+                                    <li><span>▸</span> Optimized application performance, reducing load times by 40%
+                                        through code splitting and lazy loading</li>
+                                    <li><span>▸</span> Participated in daily standups and agile sprint planning with
+                                        cross-functional teams</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="glass-card experience-card animate-scale-in" style="animation-delay: 0.15s;">
+                        <div class="experience-content">
+                            <div class="experience-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <polyline points="16 18 22 12 16 6"></polyline>
+                                    <polyline points="8 6 2 12 8 18"></polyline>
+                                </svg>
+                            </div>
+                            <div class="experience-info">
+                                <div class="experience-header">
+                                    <div>
+                                        <h3 class="experience-title">Freelance Web Developer</h3>
+                                        <p class="experience-company">Self-Employed</p>
+                                    </div>
+                                    <div class="experience-badges">
+                                        <span class="experience-period">2022 - Present</span>
+                                        <span class="experience-type">Freelance</span>
+                                    </div>
+                                </div>
+                                <ul class="experience-responsibilities">
+                                    <li><span>▸</span> Built and deployed 10+ custom websites for small businesses and
+                                        startups using modern tech stack</li>
+                                    <li><span>▸</span> Managed full project lifecycle from client consultation to
+                                        deployment and maintenance</li>
+                                    <li><span>▸</span> Implemented SEO best practices and responsive design, increasing
+                                        client traffic by average 50%</li>
+                                    <li><span>▸</span> Provided ongoing technical support and feature enhancements based
+                                        on client feedback</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="glass-card experience-card animate-scale-in" style="animation-delay: 0.3s;">
+                        <div class="experience-content">
+                            <div class="experience-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                    <circle cx="9" cy="7" r="4"></circle>
+                                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                                </svg>
+                            </div>
+                            <div class="experience-info">
+                                <div class="experience-header">
+                                    <div>
+                                        <h3 class="experience-title">Open Source Contributor</h3>
+                                        <p class="experience-company">Various Projects</p>
+                                    </div>
+                                    <div class="experience-badges">
+                                        <span class="experience-period">2023 - Present</span>
+                                        <span class="experience-type">Volunteer</span>
+                                    </div>
+                                </div>
+                                <ul class="experience-responsibilities">
+                                    <li><span>▸</span> Contributed bug fixes and feature enhancements to multiple React
+                                        and Node.js projects on GitHub</li>
+                                    <li><span>▸</span> Reviewed pull requests and participated in code discussions to
+                                        maintain project quality</li>
+                                    <li><span>▸</span> Documented new features and wrote technical tutorials for
+                                        developer community</li>
+                                    <li><span>▸</span> Gained experience collaborating with distributed teams across
+                                        different time zones</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <div class="section-content">
+                <h2 class="section-title animate-fade-in">
+                    Get In <span class="gradient-text">Touch</span>
+                </h2>
+                <p class="section-description">
+                    I'm always open to discussing new opportunities, collaborations, or just having a chat about tech.
+                    Feel free to reach out!
+                </p>
+
+                <div class="contact-grid">
+                    <div class="contact-info animate-scale-in">
+                        <div class="glass-card contact-info-card">
+                            <h3 class="contact-info-title">Contact Information</h3>
+
+                            <div class="contact-links">
+                                <a href="mailto:kedigekamogelo32@gmail.com" class="contact-link">
+                                    <div class="contact-link-icon">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="2">
+                                            <path
+                                                d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                                            </path>
+                                            <polyline points="22,6 12,13 2,6"></polyline>
+                                        </svg>
+                                    </div>
+                                    <span>kedigekamogelo32@gmail.com</span>
+                                </a>
+
+                                <a href="https://www.linkedin.com/in/kamogelo-kedige-bb2841389/" target="_blank"
+                                    rel="noopener noreferrer" class="contact-link">
+                                    <div class="contact-link-icon">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="2">
+                                            <path
+                                                d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
+                                            </path>
+                                            <rect x="2" y="9" width="4" height="12"></rect>
+                                            <circle cx="4" cy="4" r="2"></circle>
+                                        </svg>
+                                    </div>
+                                    <span>LinkedIn - Kamogelo Kedige</span>
+                                </a>
+
+                                <a href="https://github.com/Kamogelo-Kedige/" target="_blank" rel="noopener noreferrer"
+                                    class="contact-link">
+                                    <div class="contact-link-icon">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="2">
+                                            <path
+                                                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                            </path>
+                                        </svg>
+                                    </div>
+                                    <span>GitHub - Kamogelo Kedige</span>
+                                </a>
+
+                                <div class="contact-link">
+                                    <div class="contact-link-icon">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="2">
+                                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                            <circle cx="12" cy="10" r="3"></circle>
+                                        </svg>
+                                    </div>
+                                    <span>Auckland Park, Johannesburg</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="glass-card contact-info-card">
+                            <h3 class="contact-info-title">Let's Connect</h3>
+                            <p class="contact-info-text">
+                                Whether you have a question, want to collaborate on a project,
+                                or just want to say hi, my inbox is always open. I'll do my best
+                                to respond within 24-48 hours!
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="glass-card contact-form-card animate-scale-in" style="animation-delay: 0.1s;">
+                        <form id="contact-form" action="https://formspree.io/f/xyzlrjkj" method="POST">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" placeholder="Your Name" required
+                                    class="glass-input">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" placeholder="your.email@example.com"
+                                    required class="glass-input">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" placeholder="Your message here..." required
+                                    rows="5" class="glass-input"></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-full">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <line x1="22" y1="2" x2="11" y2="13"></line>
+                                    <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                                </svg>
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Kamogelo Kedige. All rights reserved.</p>
+                <p class="footer-tagline">Built with passion and lots of coffee</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast">
+        <div class="toast-content">
+            <strong class="toast-title">Message Sent!</strong>
+            <p class="toast-description">Thanks for reaching out. I'll get back to you soon!</p>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

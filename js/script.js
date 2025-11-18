@@ -27,6 +27,48 @@ if (themeToggleMobile) {
   themeToggleMobile.addEventListener("click", toggleTheme);
 }
 
+// Image performance improvements:
+// - Ensure non-critical images are lazy-loaded
+// - Disable heavy animations on small screens to reduce CPU/GPU
+(function optimizeImagesAndAnimations() {
+  try {
+    const imgs = Array.from(document.querySelectorAll("img"));
+    imgs.forEach((img) => {
+      // keep the hero/profile image high priority by class
+      if (img.classList.contains("profile-image")) {
+        img.loading = img.loading || "eager";
+        img.decoding = img.decoding || "async";
+        return;
+      }
+      // apply lazy loading and async decoding to non-critical images
+      img.loading = img.loading || "lazy";
+      img.decoding = img.decoding || "async";
+    });
+
+    // Reduce heavy animations and backdrop filters on small screens
+    const smallScreen = window.matchMedia("(max-width: 600px)").matches;
+    if (smallScreen) {
+      // remove float animations
+      document
+        .querySelectorAll(
+          ".animate-float, .animate-scale-in, .animate-gradient"
+        )
+        .forEach((el) => {
+          el.classList.remove(
+            "animate-float",
+            "animate-scale-in",
+            "animate-gradient"
+          );
+        });
+      // reduce use of backdrop-filter by toggling a helper class
+      document.documentElement.classList.add("reduced-motion-mobile");
+    }
+  } catch (e) {
+    // fail silently — performance optimizations are progressive
+    console.warn("perf init error", e);
+  }
+})();
+
 // Mobile Menu Toggle
 const mobileMenuToggle = document.getElementById("mobile-menu-toggle");
 const mobileMenu = document.getElementById("mobile-menu");

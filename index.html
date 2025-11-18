@@ -24,6 +24,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
+    <!-- Preload hero/profile image to improve Largest Contentful Paint on mobile -->
+    <link rel="preload" as="image" href="img/Kedige Kamogelo.jpeg">
     <link rel="stylesheet" href="style/styles.css">
 </head>
 
@@ -104,7 +106,7 @@
                     <a href="#skills" class="mobile-nav-link">Skills</a>
                     <a href="#projects" class="mobile-nav-link">Projects</a>
                     <a href="#education" class="mobile-nav-link">Education</a>
-                    <a href="#experience" class="mobile-nav-link">Experience</a>
+                    <!-- <a href="#experience" class="mobile-nav-link">Experience</a> -->
                     <a href="#contact" class="mobile-nav-link">Contact</a>
                 </div>
             </div>
@@ -118,7 +120,8 @@
             <div class="hero-inner animate-fade-in">
                 <div class="profile-image-wrapper">
                     <div class="profile-glow animate-float"></div>
-                    <img src="img/Kedige Kamogelo.jpeg" alt="Kamogelo Kedige" class="profile-image">
+                    <img src="img/Kedige Kamogelo.jpeg" alt="Kamogelo Kedige" class="profile-image" width="640"
+                        height="400" loading="eager" decoding="async" fetchpriority="high">
                 </div>
 
                 <h1 class="hero-title gradient-text animate-gradient">Kedige Kamogelo</h1>
@@ -952,7 +955,7 @@
         </div>
     </div>
 
-    <script src="js/script.js"></script>
+    <script src="js/script.js" defer></script>
 </body>
 
 </html>

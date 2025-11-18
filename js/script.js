@@ -35,9 +35,11 @@ const closeIcon = mobileMenuToggle?.querySelector(".close-icon");
 
 if (mobileMenuToggle) {
   mobileMenuToggle.addEventListener("click", () => {
-    mobileMenu.classList.toggle("active");
+    const isActive = mobileMenu.classList.toggle("active");
+    // toggle body scroll lock
+    document.body.classList.toggle("menu-open", isActive);
 
-    if (mobileMenu.classList.contains("active")) {
+    if (isActive) {
       menuIcon.style.display = "none";
       closeIcon.style.display = "block";
     } else {
@@ -52,6 +54,8 @@ const mobileNavLinks = document.querySelectorAll(".mobile-nav-link");
 mobileNavLinks.forEach((link) => {
   link.addEventListener("click", () => {
     mobileMenu.classList.remove("active");
+    // remove body scroll lock
+    document.body.classList.remove("menu-open");
     menuIcon.style.display = "block";
     closeIcon.style.display = "none";
   });

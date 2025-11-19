@@ -1,6 +1,6 @@
 # Kedige Kamogelo — Portfolio
 
-Professional portfolio site for Kedige Kamogelo an aspiring software developer and Computer Science & Informartics student at University of Johannesburg.
+Professional portfolio site for Kedige Kamogelo an aspiring software developer and Computer Science & Informartics Student at the University of Johannesburg.
 
 ## About
 

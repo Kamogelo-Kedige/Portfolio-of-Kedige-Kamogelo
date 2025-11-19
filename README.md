@@ -49,7 +49,8 @@ python -m http.server 8000
 This is a personal portfolio — contributions are accepted only by request. If you want to suggest content or fixes, open an issue in the repository or contact me directly.
 
 ## License
-![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+This project is licensed under the [MIT License](LICENSE).
+
 
 
 ---

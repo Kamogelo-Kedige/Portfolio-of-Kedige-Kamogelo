@@ -20,7 +20,7 @@ This repository is a personal portfolio website built with plain HTML, CSS and J
   - API‑powered Contact Book
   - Pine City Zoo App
   - My Calculator App
-  - Portfolio Generator (no-code idea)
+ 
 
 ## Tech Stack
 

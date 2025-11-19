@@ -1,15 +1,15 @@
 # Kedige Kamogelo — Portfolio
 
-Professional portfolio site for Kedige (Kamogelo) — aspiring software developer and Computer Science student.
+Professional portfolio site for Kedige Kamogelo an aspiring software developer and Computer Science & Informartics Student at the University of Johannesburg.
 
 ## About
 
 This repository is a personal portfolio website built with plain HTML, CSS and JavaScript. It showcases projects, skills, education, and contact information for Kedige Kamogelo.
+## Links
+- Portfolio : <a href="https://kedigekamogelo.netlify.app" target="_blank">Portfolio - Kedige Kamogelo</a>
+- GitHub: <a href="https://github.com/Kamogelo-Kedige" target="_blank">GitHub - Kedige Kamogelo</a>  
+- LinkedIn: <a href="https://www.linkedin.com/in/kamogelo-kedige-bb2841389/" target="_blank">LinkedIn- Kedige Kamogelo</a>
 
-- Location: Auckland Park, Johannesburg
-- Email: `kedigekamogelo32@gmail.com`
-- GitHub: `https://github.com/Kamogelo-Kedige`
-- LinkedIn: `https://www.linkedin.com/in/kamogelo-kedige-bb2841389/`
 
 ## Highlights
 
@@ -20,7 +20,7 @@ This repository is a personal portfolio website built with plain HTML, CSS and J
   - API‑powered Contact Book
   - Pine City Zoo App
   - My Calculator App
-  - Portfolio Generator (no-code idea)
+ 
 
 ## Tech Stack
 
@@ -47,28 +47,16 @@ python -m http.server 8000
 # then open http://localhost:8000
 ```
 
-## Performance Notes & Next Steps
-
-The site is optimized for quick loading on mobile (preloaded hero image, lazy-loading images, reduced effects on small screens). Suggested next improvements:
-
-- Provide optimized image assets (WebP/AVIF) and `srcset` for responsive images.
-- Inline critical CSS for the hero area to improve First Paint.
-- Add a lightweight service worker to cache assets for repeat visits.
-
-If you'd like, I can prepare optimized images and `srcset` markup, or add a small service worker for caching.
-
 ## Contributing
 
 This is a personal portfolio — contributions are accepted only by request. If you want to suggest content or fixes, open an issue in the repository or contact me directly.
 
 ## License
+This project is licensed under the [MIT License](LICENSE).
 
-See the `LICENSE` file in this repository.
+
 
 ---
 
 _Built and maintained by Kedige Kamogelo._
 
-# Portfolio-of-Kedige-Kamogelo
-
-A dynamic portfolio highlighting my journey as a computer science student and freelance web developer. Features real-world projects, tutoring experience, and leadership roles

@@ -5,8 +5,9 @@ Professional portfolio site for Kedige Kamogelo an aspiring software developer a
 ## About
 
 This repository is a personal portfolio website built with plain HTML, CSS and JavaScript. It showcases projects, skills, education, and contact information for Kedige Kamogelo.
-- GitHub: [Kamogelo-Kedige](https://github.com/Kamogelo-Kedige)
-- LinkedIn: [Kedige Kamogelo](https://www.linkedin.com/in/kamogelo-kedige-bb2841389/)
+<a href="https://github.com/Kamogelo-Kedige" target="_blank">GitHub</a>  
+<a href="https://www.linkedin.com/in/kamogelo-kedige-bb2841389/" target="_blank">LinkedIn- Kedige Kamogelo</a>
+
 
 ## Highlights
 

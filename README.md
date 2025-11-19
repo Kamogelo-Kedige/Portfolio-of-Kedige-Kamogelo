@@ -6,7 +6,7 @@ Professional portfolio site for Kedige Kamogelo an aspiring software developer a
 
 This repository is a personal portfolio website built with plain HTML, CSS and JavaScript. It showcases projects, skills, education, and contact information for Kedige Kamogelo.
 ## Links
-- Portfolio : <a href="kedigekamogelo.netlify.app" target="_blank">Portfolio - Kedige Kamogelo</a>
+- Portfolio : <a href="https://kedigekamogelo.netlify.app" target="_blank">Portfolio - Kedige Kamogelo</a>
 - GitHub: <a href="https://github.com/Kamogelo-Kedige" target="_blank">GitHub - Kedige Kamogelo</a>  
 - LinkedIn: <a href="https://www.linkedin.com/in/kamogelo-kedige-bb2841389/" target="_blank">LinkedIn- Kedige Kamogelo</a>
 

@@ -5,9 +5,8 @@ Professional portfolio site for Kedige Kamogelo an aspiring software developer a
 ## About
 
 This repository is a personal portfolio website built with plain HTML, CSS and JavaScript. It showcases projects, skills, education, and contact information for Kedige Kamogelo.
-
-- GitHub: `https://github.com/Kamogelo-Kedige`
-- LinkedIn: `https://www.linkedin.com/in/kamogelo-kedige-bb2841389/`
+- GitHub: [Kamogelo-Kedige](https://github.com/Kamogelo-Kedige)
+- LinkedIn: [Kedige Kamogelo](https://www.linkedin.com/in/kamogelo-kedige-bb2841389/)
 
 ## Highlights
 
@@ -50,8 +49,8 @@ python -m http.server 8000
 This is a personal portfolio — contributions are accepted only by request. If you want to suggest content or fixes, open an issue in the repository or contact me directly.
 
 ## License
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 
-See the `LICENSE` file in this repository.
 
 ---
 
